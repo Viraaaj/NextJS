@@ -1,0 +1,17 @@
+=> Initial setup: npx create-next-app appName
+
+=> Next.js is used for server side rendering
+
+=> Next. js is a pre-rendered React app in the client-side that users can view and interact with 
+   and can be considered as front-end. At the same time, it also does server-side rendering and 
+   API routes which can perform server-side code and access data in the database and can be considered as back-end.
+
+=> Pages and routes:
+    - There is prebuilt folder named pages where you can define your pages like about, footer, etc.
+    - In pages you can create another folder and can create a component within that folder.
+    - When you create a page next will automatically create a route for that page.
+    - eg:  - if pagename is home it will automatically create a route called /home
+           - if you have a folder inside pages then it will create route according to that.
+                1. suppose pages => your_folder_name => index.js then if you visit /your_folder_name then it will display content of index.js
+                2. suppose pages => your_folder_name => index.js and test.js then if you visit /your_folder_name then it will display content of index.js
+                   and if you visit /your_folder_name/test then it will display content of test.js.
