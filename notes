@@ -1,10 +1,13 @@
 => Initial setup: npx create-next-app appName
+=> To run on localhost: npm run dev
 
 => Next.js is used for server side rendering
 
 => Next. js is a pre-rendered React app in the client-side that users can view and interact with 
    and can be considered as front-end. At the same time, it also does server-side rendering and 
    API routes which can perform server-side code and access data in the database and can be considered as back-end.
+
+=> pages => index.js will be rendered first
 
 => Pages and routes:
     - There is prebuilt folder named pages where you can define your pages like about, footer, etc.
@@ -15,3 +18,15 @@
                 1. suppose pages => your_folder_name => index.js then if you visit /your_folder_name then it will display content of index.js
                 2. suppose pages => your_folder_name => index.js and test.js then if you visit /your_folder_name then it will display content of index.js
                    and if you visit /your_folder_name/test then it will display content of test.js.
+
+=> If you want to create resuable components like footer or navbar then you can create those by creating a folder called components (or anything you like) 
+   under main project folder and then creating components in that folder like Footer.js ot Navbar.js and then import in main index.js file.
+
+=> link component: is used to link elements like in navbar. (replacing anchor tag)
+                   In HTML we add href to anchor tag but in next we wraap anchor tab in Link tag and add href to Link.  
+
+=> In next if we navigate to certain page for first time we get served by javascript bundle of that perticular page.
+   but if we visit that page again then next will not serve javascript bundle again as we visited the page earlier also.
+   And if we visit another page it will serve us with the javascript bundle of that page.
+   In short eacg page has its own javascript bundle.
+   too check => inspect => networks.
