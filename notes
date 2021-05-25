@@ -30,3 +30,7 @@
    And if we visit another page it will serve us with the javascript bundle of that page.
    In short eacg page has its own javascript bundle.
    too check => inspect => networks.
+
+=> Layout component: If we want some component of each and every page like nav ot footer then we can create a layout component
+   and wrap content of app.js inside Layout (in App.js file) and will include App.js file's content into footer by accessing a prop
+   called children which will render all the content.
