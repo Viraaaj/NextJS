@@ -34,3 +34,8 @@
 => Layout component: If we want some component of each and every page like nav ot footer then we can create a layout component
    and wrap content of app.js inside Layout (in App.js file) and will include App.js file's content into footer by accessing a prop
    called children which will render all the content.
+
+=> styles cann be declare by creating folder called styles which will be automatically created by next.js and creating stylesheet inside folder
+   globally for all pages for for particular page.
+=> global.css is used to style globally. Whatever style you declare here will be set to all pages if that classname or tag present in those pages.
+=> filename.module.css is used to style particular page.

@@ -1,3 +1,5 @@
+import styles from "../../styles/Lists.module.css"
+
 const Lists = () => {
   return (
     <div>

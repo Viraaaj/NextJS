@@ -1,19 +1,18 @@
 import Link from "next/link";
-import Footer from "../components/Footer";
-import Navbar from "../components/Navbar";
+import styles from "../styles/Home.module.css"
 
 export default function Home() {
   return (
-    <div>
+    <div className={styles.container}>
       {/* <Navbar /> */}
-      <h1>Initial setup</h1>
+      <h1 className={styles.title} >Home page</h1>
 
-      <p>lorem ipsum dolor sit amet, consectetur adipis text</p>
+      <p className={styles.text}>lorem ipsum dolor sit amet, consectetur adipis text</p>
 
-      <p>lorem ipsum dolor sit amet, consectetur adipis text</p>
+      <p className={styles.text}>lorem ipsum dolor sit amet, consectetur adipis text</p>
 
       <Link href="/lists">
-        <a>See listing </a>
+        <a className={styles.btn}>See listing </a>
       </Link>
       {/* <Footer /> */} 
     </div>
