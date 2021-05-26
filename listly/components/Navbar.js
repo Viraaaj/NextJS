@@ -14,6 +14,8 @@ const Navbar = () => {
       <Link href="/lists"><a>Listing</a></Link>
       
       <Link href="/lists/test"><a>test</a></Link>
+
+      <Link href="/abc"><a>404 page</a></Link>
     </nav>
   );
 };
