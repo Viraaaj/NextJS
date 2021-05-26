@@ -39,3 +39,5 @@
    globally for all pages for for particular page.
 => global.css is used to style globally. Whatever style you declare here will be set to all pages if that classname or tag present in those pages.
 => filename.module.css is used to style particular page.
+=> If you are creating stylesheet for a particular page (particularPage.module.css) then you have to import it in that page as styles
+   and you can add styles to tag by using styles.anyName and declaring that anyName in that stylesheet (.anyName{styles here}) .
