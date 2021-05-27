@@ -89,3 +89,9 @@
      inside your main data file (here lists is main and inside that we have users and their ids) and set filename tcovered with [] like [filename] so that next.js
      will know that this is changable and direct user to particular page.
    - Then wrap content of clickable file inside Link tag and give href to it for particular id.
+
+=> getStaticPaths 
+   - run at built time.
+   - helps to build route and html page for particular id.
+   - we set it to async coz we have to fetch all data so we get all ids and we can return those ids to next so based on that next can generate routes and pages.
+   - next will check getStaticPaths and will check how many pages should be there based on params set by us.
