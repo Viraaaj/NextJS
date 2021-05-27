@@ -47,3 +47,14 @@
    - It will automatically create a route i.e. 404 (no need to specify anywhere)
    - If user click on link which is broken then this page will show up.
    - If you don't create a custom 404 page then next will show a default 404 page.
+
+=> Redirecting users:
+   - Suppose you want to redirect user without cliking anything to a certain page like when user submits form after success it will redirect user to 
+   home page.
+   - For this you can use useEffect hook which will be called when component mounts.
+   - For redirecting you need to use useRouter() [from next/router] and give a path like:
+      - You can initialize it first like const router = useRouter()
+      1] Then you can use router.go(1) it will redirect user to next page
+      2] Then you can use router.go(-1) it will redirect user to previous page
+      3] If you want to specify a path then you can use router.push('/') : Home path
+      4] If you want to specify a path then you can use router.push('/specific_file') : specific_file path
