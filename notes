@@ -95,3 +95,8 @@
    - helps to build route and html page for particular id.
    - we set it to async coz we have to fetch all data so we get all ids and we can return those ids to next so based on that next can generate routes and pages.
    - next will check getStaticPaths and will check how many pages should be there based on params set by us.
+
+=> Fetching single item:
+   - It will fetch data for single item by creating number of paths same as number of ids or data objects.
+   - If you run "npm run build" command in terminal then a folder named server will get created in .next folder and there inside pages folder you can see number of pages generated
+     and inside lists page you can see various html pages created by next by using path. This number is equal to number of objects in api. 
