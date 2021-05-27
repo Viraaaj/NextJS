@@ -83,3 +83,9 @@
    - getStaticProps runs before component renders, fetches the data it will wait for data and once we have a data it pumps that data in main return function.
    - we declare getstaticProps => inside we fetch api => convert it into json => and return props with object => access that object in main function as prop 
      => maps data => display what we want.
+
+=> Dynamic routes:
+   - If you want to set dynamic routes to your data like if you want when user click on name it will direct him to that user's id then you can create a file 
+     inside your main data file (here lists is main and inside that we have users and their ids) and set filename tcovered with [] like [filename] so that next.js
+     will know that this is changable and direct user to particular page.
+   - Then wrap content of clickable file inside Link tag and give href to it for particular id.
