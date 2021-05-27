@@ -1,8 +1,18 @@
+import Head from "next/Head";
+
 const Test = () => {
   return (
-    <div>
-      <h1>Test</h1>
-    </div>
+    <>
+      <Head>
+        <title>Listly | Test</title>
+
+        <meta name="Test" content="Test" />
+      </Head>
+
+      <div>
+        <h1>Test</h1>
+      </div>
+    </>
   );
 };
 

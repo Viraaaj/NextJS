@@ -58,3 +58,21 @@
       2] Then you can use router.go(-1) it will redirect user to previous page
       3] If you want to specify a path then you can use router.push('/') : Home path
       4] If you want to specify a path then you can use router.push('/specific_file') : specific_file path
+
+=> Using images and metadata:
+   - You can all your images inside filder public
+   - you can use your images anywhere in pages using <img src="/imageName" /> (Here no need to specify path just add imagename after /)
+   - But next.js provides us Image tab which we can use by importing Image from next/image and then it will automatically make that image responsive based
+     on height and width set by us. [note: it is important to set height and width if you are using Image tag instead if img tag]
+   - Another main point of using Image tab instead of img is that it will not load image untill and unless we scroll to the particular position of image which
+     helps to optimize performace.
+   - Metadata: Sometimes we need to set different wesite title for different pages instead of URL.
+               We can use Head tag to do this.
+               Inside Head you need to set title of that page and  if you want to modify metadata you can use tag <meta name="AnyName" content="anything" />
+               Syntax: 
+                  <Head>
+                     <title>
+                        Your title
+                     </title>
+                     <meta name="Home" content="Listly" />
+                  </Head>

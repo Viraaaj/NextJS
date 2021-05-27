@@ -1,10 +1,18 @@
-import styles from "../../styles/Lists.module.css"
+import Head from "next/Head";
 
 const Lists = () => {
   return (
-    <div>
-      <h1>All list</h1>
-    </div>
+    <>
+      <Head>
+        <title>Listly | Lists</title>
+
+        <meta name="Lists" content="Lists" />
+      </Head>
+
+      <div>
+        <h1>All list</h1>
+      </div>
+    </>
   );
 };
 

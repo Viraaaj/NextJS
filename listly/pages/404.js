@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
+import Head from "next/Head";
 
 const NotFound = () => {
   const router = useRouter();
@@ -13,18 +14,26 @@ const NotFound = () => {
   }, []);
 
   return (
-    <div className="not-found">
-      <h1>Something went wrong.....</h1>
+    <>
+      <Head>
+        <title>Listly | 404</title>
 
-      <h2>Page cannot be found!</h2>
+        <meta name="404" content="404" />
+      </Head>
 
-      <p>
-        Go back to{" "}
-        <Link href="/">
-          <a>Home Page</a>
-        </Link>
-      </p>
-    </div>
+      <div className="not-found">
+        <h1>Something went wrong.....</h1>
+
+        <h2>Page cannot be found!</h2>
+
+        <p>
+          Go back to{" "}
+          <Link href="/">
+            <a>Home Page</a>
+          </Link>
+        </p>
+      </div>
+    </>
   );
 };
 
