@@ -76,3 +76,10 @@
                      </title>
                      <meta name="Home" content="Listly" />
                   </Head>
+
+=> Fetching data:
+   - getStaticProps never runs in browser it will only built time.
+   - In return statement we pass value that we want to access.
+   - getStaticProps runs before component renders, fetches the data it will wait for data and once we have a data it pumps that data in main return function.
+   - we declare getstaticProps => inside we fetch api => convert it into json => and return props with object => access that object in main function as prop 
+     => maps data => display what we want.

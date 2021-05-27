@@ -1,0 +1,12 @@
+.personInfo {
+  padding: 2px 16px;
+  background: #fff;
+  display: block;
+  margin: 20px 10px;
+  width: 95%;
+  cursor: pointer;
+}
+
+.personInfo:hover {
+  box-shadow: 1px 1px 10px #4947ff;
+}
