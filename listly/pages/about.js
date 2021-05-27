@@ -1,4 +1,5 @@
 import Head from "next/Head";
+import styles from "../styles/About.module.css"
 
 const About = () => {
   return (
@@ -9,12 +10,12 @@ const About = () => {
         <meta name="about" content="about" />
       </Head>
 
-      <div>
-        <h1>About section</h1>
-
-        <p>lorem ipsum dolor sit amet, consectetur adipis text</p>
-
-        <p>lorem ipsum dolor sit amet, consectetur adipis text</p>
+      <div >
+        <h1 className={styles.aboutTitle}>About section</h1>
+        
+        <h3  className={styles.about}>
+          Fetching list of users from Api and displaying their information :)
+        </h3>
       </div>
     </>
   );

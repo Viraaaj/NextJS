@@ -16,13 +16,9 @@ export default function Home() {
         {/* <Navbar /> */}
         <h1 className={styles.title}>Home page</h1>
 
-        <p className={styles.text}>
-          lorem ipsum dolor sit amet, consectetur adipis text
-        </p>
-
-        <p className={styles.text}>
-          lorem ipsum dolor sit amet, consectetur adipis text
-        </p>
+        <h3 className={styles.text} >
+          First Next.js Project :)
+        </h3>
 
         <Link href="/lists">
           <a className={styles.btn}>See listing </a>

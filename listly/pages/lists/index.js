@@ -23,7 +23,7 @@ const Lists = ({ people }) => {
       </Head>
 
       <div>
-        <h1>All list</h1>
+        <h1 className="users">All users</h1>
         {people.map((person) => (
           <Link href={"/lists/" + person.id} key={person.id}>
             <a className={styles.personInfo}>

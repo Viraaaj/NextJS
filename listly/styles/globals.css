@@ -45,3 +45,8 @@ footer {
   text-decoration: underline;
   color: #4979ff;
 }
+
+/* Lists */
+.users {
+  text-align: center;
+}
