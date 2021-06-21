@@ -100,3 +100,5 @@
    - It will fetch data for single item by creating number of paths same as number of ids or data objects.
    - If you run "npm run build" command in terminal then a folder named server will get created in .next folder and there inside pages folder you can see number of pages generated
      and inside lists page you can see various html pages created by next by using path. This number is equal to number of objects in api. 
+
+=> Next.js docs: https://nextjs.org/docs
